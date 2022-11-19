@@ -33,12 +33,11 @@ if (isset($_POST['submit'])) {
 
         if ($query->num_rows > 0) {
             $row = $query->fetch_assoc();
-            $users_first_name = $row['users_first_name'];
-            $users_last_name = $row['users_last_name'];
+            // $users_email = $row['users_email'];
+            // $users_password = $row['users_password'];
 
-            $_SESSION['users_email'] = $users_email;
-            $_SESSION['users_password'] = $passwordmd5;
-
+            // $_SESSION['users_email'] = $users_email;
+            // $_SESSION['users_password'] = $users_password;
 
             header('location:index.php');
         } else {
