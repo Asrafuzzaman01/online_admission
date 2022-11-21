@@ -16,19 +16,18 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <?php
+     include('includes/connection.php');
+?>
+
 
 </head>
 
 <body>
+   
+   
 
-    <?php
-
-    include('includes/connection.php');
-    ?>
-
-    <?php
-
-    ?>
+    
     <div class="sectionheader">
         <nav class="navbar navbar-expand-sm bg-info   shadow-sm ">
 
@@ -135,22 +134,5 @@
 
     <!--========Login check========-->
     <!--========Login check========-->
-    <?php
-    function login_check($conn)
-    {
-        $users_email = "";
-        $users_password = "";
 
-        if (isset($_SESSION['user_email']) && isset($_SESSION['users_password'])) {
-            $users_email = $_SESSION['users_email'];
-            $users_password = $_SESSION['users_password'];
-        }
-        $sql = "select * from user_registration where users_email='$users_email' and user_password='$passwordmd5' ";
-
-        $result = $conn->query($sql);
-        if ($result->num_rows > 0)
-            return true;
-        else
-            return false;
-    }
-    ?>
+    

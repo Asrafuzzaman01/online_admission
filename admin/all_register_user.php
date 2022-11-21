@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include("includes/connection.php");
+
 ?>
 
 
@@ -69,18 +69,18 @@ include("includes/connection.php");
                             <?php echo $row['users_phone']; ?>
                         </td>
                         <td>
-                            <?php echo $row['users_phone']; ?>
+                            <?php echo $row['users_password']; ?>
                         </td>
 
 
                         <td>
-                            <a href=".php?id=<?php echo $row['id']; ?>" class=" view" title=" View"
+                            <a href=".php?id=<?php echo $row['user_id']; ?>" class=" view" title=" View"
                                 data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
 
-                            <a href=".php?id=<?php echo $row['id']; ?>" class="edit" title="Edite"
+                            <a href="edite.php?id=<?php echo $row['user_id']; ?>" class="edit" title="Edite"
                                 data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
 
-                            <a href="delete.php?id=<?php echo $row['id']; ?>" class="delete" title="Delete"
+                            <a href="delete.php?id=<?php echo $row['user_id']; ?>" class="delete" title="Delete"
                                 data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>

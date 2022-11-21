@@ -1,11 +1,11 @@
 <?php
-include("includes/header.php");
-include("includes/connection.php"); ?>
+    include("includes/header.php");
+    ?>
 
 
 <?php
-$user_id = $_REQUEST['id'];
-$sql = "delete from user_registration where user_registration. user_id=$id";
+$id =$_REQUEST['id'];
+$sql = "DELETE  FROM  user_registration WHERE user_id='$id'";
 
 
 

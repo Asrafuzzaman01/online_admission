@@ -1,7 +1,7 @@
 <?php
 
 include('includes/header.php');
-include('includes/connection.php');
+
 
 ?>
 <?php
@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
 						VALUES('$users_name',  '$users_email','$users_phone', '$md5password')";
 
             if ($conn->query($sql) == TRUE) {
-                //header('location:index.php');
+                header('location:index.php');
                 // $_SESSION['signupmsg'] = 'Sign Up Complete. Please Log in now.';
             } else {
                 echo 'data not inserted';
@@ -68,7 +68,8 @@ if (isset($_POST['submit'])) {
 
 <div class="container-fluid ">
     <div class="container" style="margin-top:20px">
-        <h3 class="text-center">Registration System</h3>
+        <h3 class="text-center">Registration Form</h3>
+        <p></p>
     </div>
     <div class="container" style="margin-top:20px">
         <!-- <div class="row">-->
@@ -141,7 +142,7 @@ if (isset($_POST['submit'])) {
                     </span>
                 </div>
                 <div class="mt-1 pb-2">
-                    <button name="submit" class="btn btn-success">Sign In</button>
+                    <button name="submit"  value="submit"class="btn btn-success">Sign In</button>
                 </div>
                 <div class="mt-1 pb-2">
                     Alrady have an account? <a href="login.php" class="text-decoration-none">Login here</a>
@@ -161,6 +162,6 @@ if (isset($_POST['submit'])) {
 
 
 <?php
-include('includes/footer.php')
+include('includes/footer.php');
 
     ?>

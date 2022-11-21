@@ -1,6 +1,6 @@
 <div>
 
-    <h2>fooTER</h2>
+    <h6>fooTER</h6>
 </div>
 </body>
 

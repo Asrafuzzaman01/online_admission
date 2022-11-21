@@ -23,18 +23,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
 
+    <?php include("includes/connection.php");?>
+
 </head>
 
 <body>
 
-    <?php
 
-    include('includes/connection.php');
-    ?>
 
-    <?php
-
-    ?>
+  
 
 
 

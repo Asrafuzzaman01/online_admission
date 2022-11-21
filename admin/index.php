@@ -1,8 +1,7 @@
 <?php
 include("includes/header.php");
-include("includes/connection.php");
 ?>
-<h1>User data</h1>
+<h1>Admin page</h1>
 
 
 
